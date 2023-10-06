@@ -1,4 +1,9 @@
-
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'connectwithazure'
+    scriptType: 'pscore'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az account list'
 trigger:
 -none
 
